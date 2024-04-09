@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier des cours</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th {
+            text-align: center;
+            background-color: #039be5;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        
+        .heure {
+            font-weight: bold;
+        }
+        
+        .cours {
+            font-size: 16px;
+        }
+        
+        .matiere {
+            font-style: italic;
+        }
+        
+        .salle, .professeur {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .jour {
+            text-align: left;
+            font-weight: bold;
+            background-color: #039be5;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7">Emploi du temps - Semaine du 16 Avril 2024</th>
+            </tr>
+            <tr>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+                <th>Samedi</th>
+                <th>Dimanche</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+                <td colspan="2">
+                    <div class="heure">8h00 - 10h00</div>
+                    <div class="cours">Technologie de Sécurités</div>
+                    <div class="matiere">Licence-GLSI-B</div>
+                    <div class="salle">Salle DGI-SS-202</div>
+                    <div class="professeur">Doudou Fall</div>
+                </td>
+                <td colspan="2">
+                    <div class="heure">10h00 - 12h00</div>
+                    <div class="cours">Développement Web <br>Dynamique</div>
+                    <div class="matiere">Licence-GLSI-B</div>
+                    <div class="salle">Salle DGI-SS-202</div>
+                    <div class="professeur">Fatou NGOM</div>
+                </td>
+                <td colspan="2">
+                    <div class="heure">8h00 - 10h00</div>
+                    <div class="cours">Bases de Données Nouvelle <br>Génération</div>
+                    <div class="matiere">Licence-GLSI-B</div>
+                    <div class="salle">Salle DGI-SS-202</div>
+                    <div class="professeur">Mouhamadou Lamine BA</div>
+                </td>
+                <td colspan="2">
+                    <div class="heure">14h00 - 16h00</div>
+                    <div class="cours">Veille technologique</div>
+                    <div class="matiere">Licence-GLSI-B</div>
+                    <div class="salle">Salle DGI-SS-202</div>
+                    <div class="professeur">Doudou Fall</div>
+                </td>
+            </tr>
+            <!-- Ajouter les cours pour les autres jours ici -->
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<nav class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow">
+  <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+    <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start items-center">
+      <a [routerLink]="['/']"
+        class="text-blueGray-700 text-lg font-bold leading-relaxed inline-flex mr-4 py-2 whitespace-nowrap uppercase"
+        href="#pablo">
+        <img src="assets/img/logo.png" alt="Logo" class="h-9 mr-2"> <!-- L'image est à gauche du texte -->
+        Ecole Superieure Polytechnique
+      </a>
+      <button
+        class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+        type="button"
+        (click)="setNavbarOpen()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div
+      class="lg:flex flex-grow items-center"
+      [ngClass]="{ hidden: !navbarOpen, block: navbarOpen }"
+      id="example-navbar-warning">
+      <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+        <li class="flex items-center">
+          <app-index-dropdown class="block"></app-index-dropdown>
+        </li>
+        <li class="flex items-center">
+          <a [routerLink]="['/auth/login']"
+            target="_blank"
+            class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blue-600 active:bg-blue-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+            style="background-color: #039be5;">
+            Se connecter
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
